@@ -1,0 +1,234 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:#FFFEFA ;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#hero{
+    padding-top: 15px;
+    background: url(assets/Hero-bg.png);
+    background-size: 500px;
+    margin-bottom: 150px;
+
+}
+.container{ 
+    width: 87.5%;
+    margin: 0 auto;
+    
+
+}
+.project-box{
+    border: 1px solid rebeccapurple;
+    padding: 48px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.project-image img{
+    width: 400px;
+    border-radius: 20px;
+}
+.project-content h3{
+    font-size: 30px;
+    color: #0E0E0E;
+    
+
+}
+.project-content p{
+    color: #0E0E0E70;
+}
+.project-content *{
+    margin-bottom: 20px;
+
+}
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    gap: 50px;
+    
+}
+.card{
+    background-color: white;
+    /* border: 1px solid rebeccapurple; */
+    padding: 40px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 4px 4px #00000025;
+    border-radius: 16px;
+    
+
+}
+.brands{
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px #00000025;
+    transition: 0.5s;
+
+}
+.brands:hover{
+    transform: scale(1,1.1);
+}
+.card *{
+    margin-bottom: 20px;
+}
+.card h3{
+    font-size:22px ;
+    font-weight: bolder;
+    
+}
+.card p{
+    font-size: 16px;
+    color: #0D1321;
+}
+.card a{
+    font-weight: bolder;
+    color: black;
+}
+.heading{
+    margin-bottom: 60px;
+
+}
+.heading h4{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #872BFF;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+.heading h2{
+    text-align: center;
+    font-size: 44px;
+}
+#hero-container{
+    display: flex;
+    width: 87.5%;
+    align-items: end;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    padding-right: 20px;
+  
+    
+}
+#hero-content{
+    padding-bottom: 100px;
+
+}
+#hero-content h1{
+    font-size: 48;
+    margin-bottom: 30px;
+}
+#hero-content h1 span{
+    color:#872BFF ;
+    
+}
+#hero-content p{
+    font-size: 16px;
+    color: #8A8A8A;
+    font: weight 200px;
+    margin-bottom: 15px;
+    line-height: 26px;
+
+
+}
+.btn{
+    border: none;
+    background-color:  #872BFF;
+    padding: 16px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 11px 31px 0 #8c8c8c;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all .5s;
+
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid rebeccapurple;
+}
+
+.whitebtn{
+    background-color:  white;
+    color: black;
+    border: 2px solid #872BFF;
+
+}
+.whitebtn:hover{
+    background-color: rebeccapurple;
+    color: white;
+   
+}
+
+#hero-image img{
+   
+    width: 500px;
+    vertical-align: middle;
+}
+#skill,#project,#experience{
+    margin-bottom: 150px;
+}
+.company-card{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+   
+}
+
+.btn-container{
+    text-align: center;
+    padding: 60px 0;
+}
+#footer{
+    background:#f5f5f5;
+    border-top:1px solid #ddd;
+    padding:15px 0;
+}
+
+#footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.copyright{
+    font-size:14px;
+    color:#555;
+}
+
+#logos{
+    display:flex;
+    gap:15px;
+}
+
+.logo img{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.logo img:hover{
+    transform:scale(1.2);
+}
+
+
+
+
+
