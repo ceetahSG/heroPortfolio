@@ -1,23 +1,19 @@
 *{
     font-family: "Plus Jakarta Sans", sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color:#FFFEFA ;
-    max-width: 1280px;
-    margin: 0 auto;
+    
+    
 }
-#hero{
-    padding-top: 15px;
-    background: url(assets/Hero-bg.png);
-    background-size: 500px;
-    margin-bottom: 150px;
 
-}
 .container{ 
     width: 87.5%;
     margin: 0 auto;
+
     
 
 }
@@ -68,10 +64,11 @@ body{
 
 }
 .brands{
-    padding: 30px;
+    padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 4px #00000025;
     transition: 0.5s;
+    background-color: white;
 
 }
 .brands:hover{
@@ -95,11 +92,12 @@ body{
 }
 .heading{
     margin-bottom: 60px;
+    text-align: center;
 
 }
 .heading h4{
-    text-align: center;
-    letter-spacing: 5px;
+   
+    letter-spacing: 4px;
     font-size: 22px;
     text-transform: uppercase;
     color: #872BFF;
@@ -108,40 +106,8 @@ body{
 
 }
 .heading h2{
-    text-align: center;
-    font-size: 44px;
-}
-#hero-container{
-    display: flex;
-    width: 87.5%;
-    align-items: end;
-    justify-content: center;
-    /* background-color: aqua; */
-    margin: 0 auto;
-    padding-right: 20px;
   
-    
-}
-#hero-content{
-    padding-bottom: 100px;
-
-}
-#hero-content h1{
-    font-size: 48;
-    margin-bottom: 30px;
-}
-#hero-content h1 span{
-    color:#872BFF ;
-    
-}
-#hero-content p{
-    font-size: 16px;
-    color: #8A8A8A;
-    font: weight 200px;
-    margin-bottom: 15px;
-    line-height: 26px;
-
-
+    font-size: 44px;
 }
 .btn{
     border: none;
@@ -160,7 +126,7 @@ body{
 .btn:hover{
     background-color: white;
     color: black;
-    border: 2px solid rebeccapurple;
+    border: 2px solid #872BFF;
 }
 
 .whitebtn{
@@ -170,18 +136,9 @@ body{
 
 }
 .whitebtn:hover{
-    background-color: rebeccapurple;
+    background-color: #872BFF;
     color: white;
    
-}
-
-#hero-image img{
-   
-    width: 500px;
-    vertical-align: middle;
-}
-#skill,#project,#experience{
-    margin-bottom: 150px;
 }
 .company-card{
     display: flex;
@@ -195,6 +152,84 @@ body{
     text-align: center;
     padding: 60px 0;
 }
+.logo img{
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.logo img:hover{
+    transform:scale(1.2);
+}
+
+.copyright{
+    font-size:14px;
+    color:#555;
+}
+.hidden{
+    display: none;
+}
+#hero{
+   
+    padding-top: 20px;
+    background: url(assets/Hero-bg.png);
+    background-size: 500px;
+    margin-bottom: 150px;
+    
+    
+
+}
+#hero-container{
+   
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 40px;
+    width: 87.5%;
+    margin: 0 auto;
+    padding-right: 20px;
+  
+    
+}
+#hero-content{
+    
+    padding-bottom: 100px;
+
+}
+#hero-content h1{
+     
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+#hero-content h1 span{
+    color:#872BFF ;
+    
+}
+#hero-content p{
+    
+    font-size: 16px;
+    color: #8A8A8A;
+    font: weight 500;
+    margin-bottom: 30px;
+    line-height: 26px;
+
+
+}
+
+
+#hero-image img{
+
+   
+    width: 500px;
+    vertical-align: middle;
+}
+#skill,
+#project,
+#experience{
+    margin-bottom: 150px;
+}
+
 #footer{
     background:#f5f5f5;
     border-top:1px solid #ddd;
@@ -207,26 +242,135 @@ body{
     align-items:center;
 }
 
-.copyright{
-    font-size:14px;
-    color:#555;
-}
 
 #logos{
     display:flex;
     gap:15px;
 }
+@media screen and (max-width:1200px) {
+    #hero-content h1{
+     
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+#button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-.logo img{
-    width:22px;
-    height:22px;
-    cursor:pointer;
-    transition:0.3s;
+}
+#hero-content p{
+    font-size: 14px;
+}
+    
+}
+@media screen and (max-width:1024px) {
+    #hero-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    
+    }
+    #button{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #hero-image img{
+        width: 320px;
+
+    }
+    #hero-content{
+        padding-bottom: 0;
+       
+    }
+    .card-box{
+    flex-direction: column;
+    align-items: center;
+ }
+ .card{
+    width: 100%;
+ }
+ .project-image img{
+    width: 250px;
+ }
+ .project-content *{
+    margin-bottom: 10px;
+ }
+ .copyright{
+    font-size: 12px;
+ }
+}
+@media screen and (max-width:768px) {
+ .heading h2{
+    font-size: 39px;
+ }
+ .project-box{
+    flex-direction: column;
+ }
+ .project-image img{
+    width: 100%;
+ }
+ .copyright{
+    font-size: 10px;
+ }
+  #footer{
+    padding: 5px;
+ }
+}
+@media screen and (max-width:568px) {
+    .container{
+        width: 98%;
+        margin: 0 auto;
+    }
+    #button{
+        flex-direction: column;
+    
+    }
+    #hero-image img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .heading h2{
+    font-size: 20px;
+ }
+  .heading h4{
+    font-size: 16px;
+ }
+ .project-content{
+    text-align: center;
+ }
+ .project-box{
+    padding: 20px;
+ }
+ .company-card{
+    flex-direction: column;
+ }
+ .company-card img{
+    max-width: 150px;
+    width: 100%;
+ }
+#hero-container{
+    padding: 0;
+
+}
+.btn{
+    margin-right: 0;
+}
+.copyright{
+    font-size: 8px;
+ }
+ .logo img{
+    width: 15px;
+    height: 15px;
+ }
+ #footer{
+    padding: 0;
+ }
+    
+
 }
 
-.logo img:hover{
-    transform:scale(1.2);
-}
+
 
 
 
